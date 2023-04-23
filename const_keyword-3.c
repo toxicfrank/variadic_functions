@@ -11,7 +11,7 @@ int main(void)
 
  /**
  * since the pointer has been made constant one cannot
- * change the value the pointer points to
+ * change the value of the pointer ip
  */
 	*ip = 10;
 
@@ -23,15 +23,16 @@ int main(void)
 	const int *ptr = &k;
 
 /**
- * It will run because one is not changing the value ip points
- * to
+ * It will run because one is not changing the value of the pointer
+ * because one can chege the value of k to be 7 but all we r doing is changing
+ * the address of the pointer ptr
  */
 	ptr = &l;
 
 	printf("%d\n", *ptr);
 
 /**
- * if i did not want to change what pointer points to i would
+ * if i did not want to change what pointer points to I would
  * write the code as shown below
  */
 	int a = 4, b = 6;
