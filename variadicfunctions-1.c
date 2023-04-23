@@ -30,6 +30,7 @@ int pullout(int num_args, ...)
 	for (i = 0; i < num_args; i++)
 	{
 		int x = va_arg(args, int);
+
 		printf("x: %d\n", x);
 	}
 	va_end(args);
