@@ -9,9 +9,9 @@ int pullout(int num_args, ...);
  */
 int main(void)
 {
-    pullout(3, 4, 5, 7);
+	pullout(3, 4, 5, 7);
 
-    return (0);
+	return (0);
 }
 
 /**
@@ -21,16 +21,16 @@ int main(void)
  */
 int pullout(int num_args, ...)
 {
-    va_list args;
+	va_list args;
 
-    va_start(args, num_args);
+	va_start(args, num_args);
 
-    int i;
+	int i;
 
-    for (i = 0; i < num_args; i++)
-    {
-        int x = va_arg(args, int);
-        printf("x: %d\n", x);
-    }
-    va_end(args);
+	for (i = 0; i < num_args; i++)
+	{
+		int x = va_arg(args, int);
+		printf("x: %d\n", x);
+	}
+	va_end(args);
 }
