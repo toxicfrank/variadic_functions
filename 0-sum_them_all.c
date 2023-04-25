@@ -5,7 +5,7 @@
 int sum_them_all(const unsigned int n, ...);
 
 /**
- * main - check the code
+ * main - call the function below 
  * Return: always 0
  */
 
