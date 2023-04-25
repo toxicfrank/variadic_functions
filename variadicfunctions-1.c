@@ -34,4 +34,6 @@ int pullout(int num_args, ...)
 		printf("x: %d\n", x);
 	}
 	va_end(args);
+
+    return (0);
 }

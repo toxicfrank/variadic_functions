@@ -27,7 +27,7 @@ int max(int num_args, ...)
 
     for (i = 0; i < num_args; i++)
     {
-        va_arg(args, int);
+        int x = va_arg(args, int);
     }
 
     va_end(args);
